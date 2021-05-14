@@ -1,0 +1,31 @@
+
+    <mat-table [dataSource]="projectTableData"  class="mat-elevation-z8">
+        <ng-container matColumnDef="Name"> 
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let row">{{row.name}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="Email">
+        <mat-header-cell *matHeaderCellDef  class="center-text"> Email </mat-header-cell>
+        <mat-cell *matCellDef="let row" class="center-text">{{row.email}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="Phone Number">
+            <mat-header-cell *matHeaderCellDef  class="center-text"> Phone Number </mat-header-cell>
+            <mat-cell *matCellDef="let row" class="center-text">{{row.phoneNumber}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="Address">
+            <mat-header-cell *matHeaderCellDef  class="center-text"> Address </mat-header-cell>
+            <mat-cell *matCellDef="let row" class="center-text">{{row.address}} </mat-cell>
+        </ng-container>
+
+
+
+        <!-- <ng-container matColumnDef="Apply for">
+            <mat-header-cell *matHeaderCellDef  class="center-text"> </mat-header-cell>
+            <mat-cell *matCellDef="let row" class="center-text"> 
+                <button mat-raised-button (click)="openDailog(row)" style="background: #1111e785;color: #fff;">Apply</button>
+            </mat-cell>
+        </ng-container> -->
+        <mat-header-row *matHeaderRowDef="displayColomCompany"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayColomCompany;">
+        </mat-row>
+    </mat-table>

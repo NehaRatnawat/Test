@@ -1,0 +1,33 @@
+.dilog-pos {
+    width: 31%;
+    height: 40%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid gray;
+    text-align: center;
+    background: #fff;
+    box-shadow: 2px 5px #d7d7d7;
+}
+.input-pos {
+    padding: 10px;
+    margin: 15px 25px;
+}
+
+.btn-dialog1 {
+    padding: 5px 25px;
+    background: bisque;
+    margin: 10px 25px;
+}
+
+#toast-container > div{
+    position: obsolute;
+    top:10px;
+}
+
+.erroe-msg {
+    color: red;
+    text-align: left;
+    margin-left: 5px;
+}

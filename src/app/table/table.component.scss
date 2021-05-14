@@ -1,0 +1,150 @@
+.row-wrap {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 40%;
+  } 
+  
+  .full-width-table {
+      width: 100%;
+  }
+  
+  .tabTitleBg {
+    background: #016DB1;
+    padding: 20px;
+  }
+  
+  .tableTitle {
+    color: white;
+    padding: 20px;
+  }
+  
+  .filter {
+    text-align: right;
+    margin: 0px 0px 7px 0px;
+  }
+  
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding:20px;
+  }
+  
+  .example-header {
+    min-height: 64px;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  mat-cell {
+    overflow: inherit;
+    padding: 5px;
+  }
+
+  mat-cell:first-of-type, mat-footer-cell:first-of-type, mat-header-cell:first-of-type {
+    padding-left: 24px;
+    place-content : center;
+  }
+  
+  mat-header-row {
+    background: #053452;;
+  } 
+  
+  mat-header-cell {
+    color : white;
+    //place-content : center;
+  }
+  
+  mat-row:nth-child(even){background-color: #f2f2f2;};
+  
+  .mobile-label {
+    display: none;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+      margin-top : 15%
+    }
+  
+  }
+  
+  @media only screen and(max-width: 740px) {  
+    .mobile-label {
+      padding: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+  
+    .mat-header-row {
+      display: none;
+    }
+  
+    .mat-row { 
+      flex-direction: column;
+      align-items: start;
+      padding: 8px 24px;
+    }
+  
+    .redOffer {
+      margin-left : 0
+    }
+  }
+  
+  @media only screen and(max-width: 740px) {  
+    .mobile-label {
+      padding: 10px;
+      display: inline-block;
+      font-weight: bold;
+    }
+  
+    .mat-header-row {
+      display: none;
+    }
+  
+    .mat-row { 
+      flex-direction: column;
+      align-items: start;
+      padding: 8px 24px;
+    }
+  
+    .redOffer {
+      margin-left : 0
+    }
+  }
+
+
+  .table-headding {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #233e5a;
+    font-weight: 500;
+    margin: 2%;
+  }
+
+  .mat-sort-header-buttons {
+    padding : 5px 0px;
+  }
+
+  .possition {
+    width: 122%;
+    margin-left: -136px;
+    zoom: 0.9;
+    text-align: center;
+  }
+
+  .center-text {
+    place-content: center
+  }
+
+  .opacity-div {
+    opacity: 0.1;
+  }
+
+

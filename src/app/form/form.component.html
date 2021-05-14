@@ -1,0 +1,19 @@
+
+<div class="dilog-pos">
+    <mat-grid-list cols="2" rowHeight="100px">
+        <mat-grid-tile>
+            <input type="text" [(ngModel)]="name" placeholder="Enter Name" class="input-pos" >
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <input [(ngModel)]="email" type="text" placeholder="Enter Email" class="input-pos">
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <input [(ngModel)]="phoneNumber" type="Number" placeholder="Enter Phone number" class="input-pos">
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <input [(ngModel)]="address" type="text" placeholder="Address" class="input-pos">
+        </mat-grid-tile>
+    </mat-grid-list>
+    <button mat-raised-button class="btn-dialog1" (click)="submit()">Submit</button>
+    <div class="erroe-msg">{{errorMessage}}</div>
+</div>
